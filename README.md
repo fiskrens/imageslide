@@ -1,17 +1,17 @@
 # Imageslide
 
-##Description
+## Description
 Imageslide is a responsive jQuery image slider. It has support for both desktop and smart devices (swipe support).
 
-##Get started
+## Get started
 Include the imageslide-1.0.js and imageslide-1.0.css.
-####Example:
+#### Example:
 ```
 <script type="text/javascript" src="../js/imageslide-1.0.js"></script>
 <link rel="StyleSheet" href="../css/imageslide-1.0.css">
 ```
 
-####Add the following HTML with images you wish to show:
+#### Add the following HTML with images you wish to show:
 ```
 <div id="myImageSlide" class="imageslide">
 	<div class="imageslide-images">
@@ -22,7 +22,7 @@ Include the imageslide-1.0.js and imageslide-1.0.css.
 </div>
 ```
 
-####In JS, run the command .imageslide() on selector
+#### In JS, run the command .imageslide() on selector
 ```
 $(function() {
 	$('#myImageSlide').imageslide()
@@ -30,7 +30,7 @@ $(function() {
 ```
 
 
-##Settings
+## Settings
 The imageslide can also start with a few settings.
 ```
 $(function() {
@@ -51,7 +51,7 @@ $(function() {
 | showtext | true | Show the "countertext" ex: "1 of 5" |
 | countertext | {x} of {y} | Format of the counter text. **{x}** is replaced with the current image index, while **{y}** is replaced with the total image count. |
 
-##Methods
+## Methods
 Methods are run på sending a string with the method name as first parameter.
 ```
 $('#myImageSlide').imageslide('Next');

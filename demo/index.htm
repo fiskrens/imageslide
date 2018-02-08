@@ -1,0 +1,157 @@
+<html>
+	<head>
+		
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="../js/imageslide-1.0.js"></script>
+		<link rel="StyleSheet" href="../css/imageslide-1.0.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		
+
+
+		<!-- DEMO CODE -->
+		<script type="text/javascript" src="demo.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+		<style>
+			.padding { padding: 60px 20px; }
+			h2 { margin-top: 80px; }
+		</style>
+		<!-- END DEMO CODE -->
+	</head>
+	<body class="text-center">
+		<div class="container">
+			<div class="columns">
+				<div class="column col-12 bg-gray padding">
+					<h1>Imageslide</h1>
+					<div style="width: 100%; height: 400px; max-width: 800px; display: inline-block;">
+						<div id="imageslide" class="imageslide">
+							<div class="imageslide-images">
+								<img src="images/1.jpg">
+								<img src="images/2.jpg">
+								<img src="images/3.jpg">
+								<img src="images/4.jpg">
+								<img src="images/5.jpg">
+								<!--
+								<img src="images/6.jpg">
+								<img src="images/7.jpg">
+								<img src="images/8.jpg">
+								<img src="images/9.jpg">
+								<img src="images/10.jpg">
+								-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container grid-lg">
+			<div class="columns">
+				<div class="column col-12 text-left">
+					<h2>Description</h2>
+					<p>Imageslide is a responsive jQuery image slider. It has support for both desktop and smart devices (swipe support).</p>
+					
+					<h2>Get started</h2>
+					<p>Include the imageslide-1.0.js and imageslide-1.0.css.</p>
+					<h5>Example:</h5>
+					<pre class="code"><code>&lt;script type="text/javascript" src="../js/imageslide-1.0.js"&gt;&lt;/script&gt;
+&lt;link rel="StyleSheet" href="../css/imageslide-1.0.css"&gt;</code></pre>
+					<h5>Add the following HTML with images you wish to show:</h5>
+					<pre class="code"><code>&lt;div id="myImageSlide" class="imageslide"&gt;
+	&lt;div class="imageslide-images"&gt;
+		&lt;img src="images/1.jpg"&gt;
+		&lt;img src="images/2.jpg"&gt;
+		&lt;img src="images/3.jpg"&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					<h5>In JS, run the command .imageslide() on selector</h5>
+					<pre class="code"><code>$(function() {
+	$('#myImageSlide').imageslide()
+});</code></pre>
+
+					<h2>Settings</h2>
+					<p>The imageslide can also start with a few settings.</p>
+					<pre class="code"><code>$(function() {
+	$('#myImageSlide').imageslide({
+	'start': 0,
+	'showthumbs': true,
+	'showtext': true,
+	'countertext' : '{x} of {y}'
+})
+});</code></pre>
+
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th style="width: 120px;">Option</th>
+								<th style="width: 120px;">Default</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>start</td>
+								<td>0</td>
+								<td>Index value of the slide to start on.</td>
+							</tr>
+							<tr>
+								<td>showthumbs</td>
+								<td>true</td>
+								<td>Show small thumbnails or not</td>
+							</tr>
+							<tr>
+								<td>showtext</td>
+								<td>true</td>
+								<td>Show the "countertext" "1 of 5"-images</td>
+							</tr>
+							<tr>
+								<td>countertext</td>
+								<td>{x} of {y}</td>
+								<td>Format of the countertext. <strong>{x}</strong> is replace with the current image index, while <strong>{y}</strong> is replaced with the total image count.</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h2>Methods</h2>
+					<p>Methods are run by sending a string with the method name as first parameter.</p>
+					<pre class="code"><code>$('#myImageSlide').imageslide('Next');</code></pre>
+					
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Method</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Next()</td>
+								<td>Switch to next image in the imageslider</td>
+							</tr>
+							<tr>
+								<td>Previous()</td>
+								<td>Switch to previous image in the imageslider</td>
+							</tr>
+							<tr>
+								<td>SetFirst()</td>
+								<td>Switch to first image in the imageslider</td>
+							</tr>
+							<tr>
+								<td>SetLast()</td>
+								<td>Switch to last image in the imageslider</td>
+							</tr>
+							<tr>
+								<td>SetCurrentByIndex(<strong>intIndex</strong>)</td>
+								<td>Switch to image in the imageslider with the index <strong>intIndex</strong></td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+		<footer><h2></h2></footer>
+	</body>
+</html>

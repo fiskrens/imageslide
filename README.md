@@ -1,2 +1,1 @@
 # imageslide
-Responsive image slider

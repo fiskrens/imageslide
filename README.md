@@ -35,11 +35,11 @@ The imageslide can also start with a few settings.
 ```
 $(function() {
 	$('#myImageSlide').imageslide({
-	'start': 0,
-	'showthumbs': true,
-	'showtext': true,
-	'countertext' : '{x} of {y}'
-})
+		'start': 0,
+		'showthumbs': true,
+		'showtext': true,
+		'countertext' : '{x} of {y}'
+	})
 });
 ```
 
